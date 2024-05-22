@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition recap</title>
+    <style>
+        div{
+            background-color: palevioletred;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            transition: transform 3s;
+            animation-name: ani;
+            animation-duration: 4s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        
+
+        }
+        /* div:hover{ */
+            /* transform: translatey(300px); */
+        /* } */
+        @keyframes ani{
+            to{
+                transform: translateY(300px);
+            }
+        }
+
+    
+
+        
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

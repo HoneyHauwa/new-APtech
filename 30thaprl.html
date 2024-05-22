@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid area</title>
+    <style>
+        .gridcontain{
+            display: grid;
+            background-color: rgb(182, 147, 238);
+            gap: 8px;
+            padding: 8px;
+            grid-template-areas: 'topheader topheader topheader topheader topheader'
+            'bodymenu topmain topmain topmain bodyright'
+            ' bodymenu bodyfoot bodyfoot bodyfoot bodyfoot';
+
+
+        }
+        .gridcontain > div{
+            color: rgb(0, 0, 0);
+            background-color: rgb(165, 42, 110);
+            font-weight: bold;
+            text-align: center;
+        
+
+        }
+        .item1{
+grid-area: topheader;
+        }
+        .item2{
+grid-area: bodymenu;
+        }
+        .item3{
+grid-area: topmain;
+        }
+        .item4{
+grid-area: bodyright;
+        }
+        .item5{
+grid-area: bodyfoot;
+        }
+    </style>
+</head>
+<body>
+    <div class="gridcontain">
+        <div class="item1"> header</div>
+        <div class="item2">menu</div>
+        <div class="item3">main</div>
+        <div class="item4">right</div>
+        <div class="item5">footer</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making nimo</title>
+    <style>
+        .anything{
+            background-color: rgb(9, 225, 240);
+            width: 60px;
+            height: 60px;
+            animation-name: animation;
+            animation-duration: 10s;
+        }
+        .everything{
+            background-color: rgb(240, 9, 20);
+            width: 60px;
+            height: 60px;
+            animation-name: animation;
+            animation-duration: 10s; 
+        }
+        .nothing{
+             background-color: rgb(240, 9, 221);
+            width: 60px;
+            height: 70px;
+            animation-name: animation;
+            animation-duration: 10s;
+        }
+        .something{
+             background-color: rgb(35, 6, 73);
+            width: 60px;
+            height: 70px;
+            animation-name: animation;
+            animation-duration: 10s;
+        }
+
+        @keyframes animation{
+            from{
+                background-color: rgb(8, 236, 96);
+            
+            }
+            to{
+                background-color: rgb(99, 22, 224);
+                border-radius: 50%;
+                transition: transform 2s;
+                transform: translateX(200px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>making something cool with animation </h2>
+    <div class="anything"></div>
+    <div class="nothing"></div>
+    <div class="everything"></div>
+    <div class="something"></div>
+    
+</body>
+</html>

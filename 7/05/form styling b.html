@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form styling </title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+            *{box-sizing: border-box;}
+            form-inline{
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+            }
+            .form-inline label{
+                margin: 5px 10px 5px 0;
+            }
+            .form-inline input{
+                vertical-align: middle;
+                margin: 5px 10px 5px 0;
+                padding: 10px;
+                background-color: whitesmoke;
+                border: 1px solid wheat;
+            }
+            .form-inline button{
+                padding: 10px 20px;
+                background-color: blue;
+                border: 1px solid white;
+            }
+            .form-inline button:hover{
+                background-color: cornflowerblue;
+            }
+            
+    </style>
+</head>
+<body>
+    <form action ="" class="form-inline" >
+        <label for="email">email:</label>
+         <input type="email" placeholder="your email.." name="email">
+         <label for="pwd">password</label>
+         <input type="password" id="pwd" placeholder="your password" name="pawd">
+         <label for="">
+            <input type="checkbox" name="remember">Remember me
+         </label>
+         <button type="submit">submit</button>
+         <button type="reset">clear</button>
+
+
+    </form>
+</body>
+</html>

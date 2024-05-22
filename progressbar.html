@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>progress</title>
+    <style>
+        .progress-container {
+            width: 500px;
+            height: 30px;
+            background-color: rgb(155, 155, 197);
+            border-radius: 5px;
+            overflow: hidden;
+
+        }
+        .progress-bar{
+            height: 100%;
+            background-color: rgb(234, 0, 255);
+            transition: width 2s  ease-in-out;
+            width: 5%;
+            /* transform: translatex(1px); */
+            /* width: 100%; */
+            
+        }
+        .progress-bar:hover{
+            width: 100%;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" > </div>
+    </div>
+</body>
+</html>

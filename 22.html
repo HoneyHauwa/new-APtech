@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on animation</title>
+    <style>
+        body{
+            background-color: black;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            place-items: center;
+            /* height: 100vh; */
+        }
+        .star{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+            position: relative;
+            animation: shinning 2s infinite;
+
+        }
+        .starlink{
+            width: 50px;
+            height: 50px;
+            background-color: crimson;
+            animation: shinning 5s 3s infinite ease-in-out;
+            left: 250px;
+            top: 20px;
+        }
+        .starboy{
+            width: 70px;
+            height: 70px;
+            background-color: rgb(233, 13, 167);
+            animation: shinning 7s 4s infinite ease-in-out;
+            right: 500px;
+            bottom: 900px;
+        }
+        .stargirl{
+            width: 100px;
+            height: 100px;
+            background-color: forestgreen;
+            animation: shinning 7s 4s infinite ease-in-out;
+            bottom: 900px;
+            right: -400px;
+
+        }
+        .starman{
+            width: 200px;
+            height: 200px;
+            background-color: peru;
+            animation: shinning 7s 4s infinite ease-in-out;
+            bottom: 890px;
+            left: 50px;
+            
+        }
+        .starwoman{
+            width: 30px;
+            height: 30px;
+            background-color: rgb(19, 138, 48);
+            animation: shinning 7s 4s infinite ease-in-out;
+            bottom: 900px;
+            left: 200px;
+        }
+        @keyframes shinning {
+            0%{
+                opacity: 0;
+                transform: scale(0);
+
+            }
+            50%{
+                opacity: 1;
+                box-shadow: 0 0 12px rgb(20, 14, 9);
+                transform: scale(1);
+
+            }
+            100%{
+                opacity: 0;
+                transform: scale(0);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="star"></div>
+    <div class=" star starlink"></div>
+    <div class="star starboy"></div>
+    <div class="star starlink"></div><br>
+    <div class="star"></div>
+    <div class="star starlink"></div>
+    <div class=" star starboy"></div>
+    <div class="star starwoman"></div>
+    <div class="star starman"></div>
+    <div class="star starwoman"></div>
+    <div class="star starman"></div>
+    <div class="star stargirl"></div>
+    <div class="star stargirl"></div>
+    <div class="star"></div>
+</body>
+</html>

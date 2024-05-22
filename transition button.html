@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition button</title>
+    <style>
+        button{
+            border: 0;background-color: rgb(231, 18, 160);
+            color: rgb(242, 244, 247);
+            border-radius: 5px;
+            box-shadow: 0 5px 0 rgb(124, 19, 98);
+            cursor: pointer;
+            font-size: 16px;
+            margin: 0;
+            padding: 10px 20px;
+            outline: 0;
+            transition: all.2s;
+                }
+        button:active{
+            box-shadow: 0 2px 0 rgb(26, 18, 48);
+            transform:translatey(2px);
+        }
+        
+    </style>
+</head>
+<body>
+    <button> click me</button>
+</body>
+</html>

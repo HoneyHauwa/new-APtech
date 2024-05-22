@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tables</title>
+    <style>
+        .navbar{
+            background-color: black;
+            padding: 5px;
+
+        }
+        .navbar a{
+            color: aliceblue;
+            padding-left: 25px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+        .navbar a:hover{
+            background-color: palevioletred;
+            color: black;
+            cursor: pointer;
+            padding: 10px;
+        }
+       .navbar button{
+        background-color: palevioletred;
+        color: white;
+        position: relative;
+        padding: 15px;
+        left: 850px;
+        border-radius: 9px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+       }
+       .navbar button:hover{
+        cursor: pointer;
+        color: black;
+        background-color: pink;
+       }
+       .navbar button:active{
+            box-shadow: 0 4px 0 rgb(5, 0, 17);
+            transform:translatey(3px);
+          }
+        table, th, td{
+            border: 1px solid rgb(252, 8, 199);
+            border-collapse: collapse ;
+        }
+        th,td{
+            background-color: rgb(232, 235, 240);
+            color: black;
+            width: 600px;
+            height: 300px;
+        }
+        .up{
+            position: relative;
+            left: 200px;
+            padding: 30px;
+            animation-name: pour;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        
+        }
+        
+        .down{
+            float: left;
+            position: relative;
+        }
+        h2{
+            position: relative;
+            text-decoration: underline;
+            top: 5px;
+        }
+        .me{
+            animation-name: some;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes pour{
+            to{
+                transform: translatex(-200px);
+                
+            }
+        }
+        @keyframes some{
+            to{
+                transform: translateY(-1400px);
+            }
+        }
+         *{ box-sizing: border-box; }
+            input[type=text],select,textarea{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid rgb(238, 8, 238);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submit]{
+                background-color: rgb(235, 69, 132);
+                color: aliceblue;
+                padding: 12px 20px;
+                border-radius: 4px;
+                cursor: grab;
+            }
+            input[type=submit]:hover{
+                background-color: rgb(87, 1, 51);
+
+            }
+            .container{
+                border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+            }
+    </style>
+</head>
+<body>
+     <i class="fa fa-fw-home"></i>
+    <div class="navbar">
+        <a href=""><i class="fa fa-fw fa-home"></i> home</a>
+        <a href=""><i class="fa fa-fw fa-search"></i>Search</a> 
+        <a href=""><i class="fa fa-fw fa-envelope"></i>Contact</a> 
+        <a href=""><i class="fa fa-fw fa-user"></i>Login</a>
+        <button>get free consultancy</button>
+        
+    </div>
+    <!-- <h3 style="text-align: center;">all about tables</h3> -->
+    <table style="text-align: center;" >
+        <tr>
+             <th style="width: 60%;" rowspan="">
+                  Lorem ipsum  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magnam voluptatibus quas praesentium quam delectus inventore totam laudantium pariatur mollitia  <br>fugit amet, impedit eius quo iusto, temporibus alias quisquam vitae veritatis ipsa dolor unde est adipisci! Omnis ut corporis distinctio pariatur, hic ipsum, optio blanditiis voluptatibus, veniam nostrum culpa.dolor sit amet Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, veritatis officiis incidunt fuga dolores obcaecati minus autem inventore asperiores deserunt.
+            <div><h2>fashion illustration</h2> <img src="" alt="">
+            <img class="up" style="height: 200px; width: 40%;"  src="fashion3.jpeg" alt=""></div>
+        <p class="down" style="text-align: center;">Lorem ipsum dolor sit amet, consectetur adipisicing elitb Doloremque os deserunt ad fuga excepturi suscipit  quidem speriores nostrum. Incidunt doloribus natus reiciendis uga, unde quaerat quasi quos quo.
+        Laudantium oluptasuia qui autem ullam laboriosam nequ iusto harumdoloremque labore dolore modi placeat sunt delectus. Minima molestiae voluptate, placeat mpedit eligendi blanditiis esse.
+        Aperiam odio ratione atque eius voluptate. Consequatur, pariatu voluptates? Atque ad culpa, harum mollitia consequuntur distinctio nisi vel magnam quasi exercitationem est quo dit iure perferendis delectus qui laborum?</p></th>
+             
+        
+        <th style="width: 70%;"><h2>some type of fashion format</h2>
+        <ul>
+            <li>  <h3>pencil sketch fashion</h3><img src="fashion1.jpeg" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum, eveniet? <br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, perspiciatis.</p></li>
+            <li> <h3> pen sketch fashion</h3> <img src="fashion3.jpeg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nihil dolor dolores necessitatibus omnis quasi voluptatibus veniam doloribus minima eveniet!</p></li>
+            <li> <h3>paint sketch fashion</h3><img src="fashion5.jpeg" alt=""> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum laborum sunt veniam et, odio quaerat vel dicta blanditiis unde aliquam.</p></li>
+        </ul></th>
+        
+        </tr>
+        <tr>
+            <td><h2>why i love fashion</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem at vel et eius incidunt,<br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. A eum error, soluta in deserunt magni praesentium cupiditate eligendi at natus vitae nesciunt numquam ipsum id maxime mollitia quisquam facere, 
+                officiis blanditiis quaerat voluptate doloribus? Libero illo ex facilis aliquid fuga. Fuga, placeat aliquam laboriosam deleniti Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum 
+                ducimus, architecto similique odio sint ipsam quis omnis id, necessitatibus et, amet alias molestias aperiam dolorem aspernatur nihil blanditiis hic eveniet eum labore veritatis optio quae
+                 quibusdam incidunt? Accusamus atque consectetur minima tenetur soluta exercitationem quas illum eveniet temporibus debitis. Quaerat neque quis libero ullam a aut veniam maxime reiciendis? Officia 
+                 unde impedit nihil maiores consequatur veniam molestiae accusantium. Excepturi nobis dolorem culpa quos nam asperiores expedita aliquid accusamus illo sed. Impedit sint eligendi autem harum. 
+                 Illum commodi ad soluta deleniti, possimus perferendis nulla impedit <br>aspernatur hic ipsa, enim omnis ipsam? tempore aspernatur aut, quos, earum eius unde doloribus recusandae quidem! <br>
+                  Officia quaerat odio quod. tenetur modi non totam voluptates molestias quam fuga corporis id odio nemo. Asperiores corporis iure repellendus! adipisicing elit. Obcaecati assumenda magni voluptates 
+                  odit accusantium, accusamus nostrum, laudantium nulla, ab rerum quidem sit perspiciatis tempore similique. Aliquid sequi explicabo ipsam expedita.</p></td>
+            <td rowspan="2"> <img src="fashion3.jpeg" alt="">
+            <h3>why you should go into fashion</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste nobis, possimus assumenda ipsum minus id blanditiis, modi repellat ex repellendus, deleniti officiis esse facere fugiat hic quo. Architecto necessitatibus, cum nesciunt ipsum nobis mollitia ipsam 
+            sed voluptatibus voluptate modi impedit ullam numquam magnam repellendus sint atque adipisci laboriosam hic incidunt quia dicta. Modi quos quas sed commodi dolores, libero ex, illum, officiis vel soluta porro accusamus in cumque tenetur? Dolorem officiis 
+            blanditiis libero ducimus! Culpa in, voluptatum nemo nobis doloribus odio incidunt soluta laborum officia error eos quod corporis. Culpa ullam praesentium debitis quos blanditiis inventore Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque 
+            ea unde asperiores aut odio vitae quia inventore modi magni necessitatibus soluta fugiat, praesentium dolorem expedita culpa, ipsam sequi? Sapiente blanditiis distinctio, officiis animi libero, necessitatibus accusantium, sint exercitationem ipsum eos 
+            omnis? Quae nihil consequatur ex accusamus nisi numquam nostrum dicta, voluptatem quis expedita perspiciatis ducimus vel alias sit aliquam! Officia voluptate aperiam dolor hic quod dolorem, eius corporis nisi nobis voluptatem error eveniet porro voluptatum? 
+            Nobis aspernatur eaque tempore enim maxime, rerum minima dolor voluptates nam et delectus cum, recusandae dicta. Atque, est accusantium. Repellat rerum, itaque, quae commodi ipsam deleniti quia blanditiis incidunt numquam labore doloribus expedita distinctio? 
+            Fugiat, quis iste rem, est commodi animi neque labore incidunt hic alias vero dolorum totam ad exercitationem nihil cupiditate vitae, eum beatae. Iusto quam eligendi fuga, numquam esse eveniet, debitis praesentium inventore sint earum natus quae doloremque veritatis 
+            soluta consequuntur. Adipisci voluptate excepturi odio! Porro delectus, ad ipsa ex ipsum repellendus sed iure aspernatur natus voluptatem. Corporis atque dignissimos enim voluptatum saepe ducimus doloribus sapiente, vitae similique quidem consectetur
+             labore consequatur laudantium repellendus sit ab quisquam mollitia earum laborum non exercitationem omnis hic modi expedita! Pariatur necessitatibus Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Perferendis expedita beatae libero sequi minus dicta, nisi possimus, cumque omnis est molestiae doloremque dolore repudiandae voluptatem incidunt commodi unde id nesciunt cupiditate. Cumque unde magnam alias vero? Quos laborum expedita optio libero
+               nulla magni, hic suscipit velit eius adipisci. Cum est soluta perspiciatis quod tenetur eligendi rerum in non debitis optio. Tempora illo corporis, optio asperiores maxime natus sapiente laborum rem cum, eveniet ea consequuntur voluptatem sint eos 
+               praesentium. Debitis odit ducimus molestias, natus inventore eaque commodi sunt at earum expedita facere doloribus quam iste provident culpa, atque architecto ab consequatur?inventore incidunt perspiciatis ipsa.distinctio ipsum accusamus aliquid.</p></td>
+        </tr>
+        <tr>
+            <td> <h1>THE WORLD IS NOTHING WITHOUT CREATORS</h1><img style="width: 100%;" src="fashion3.jpeg" alt=""></td>
+            <td colspan="2" class="me">  <img src="fashion2.jpeg" alt="">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim itaque rem ex reprehenderit facilis deserunt at culpa voluptatum sunt dolore, quibusdam dignissimos voluptate eaque, numquam facere. A quisquam adipisci incidunt distinctio? Modi sapiente laborum expedita doloribus sunt, vero molestias facilis explicabo blanditiis eveniet. Optio sunt numquam soluta esse sapiente fuga id impedit repellendus molestias? Ipsam cum deleniti sequi. Sapiente repudiandae incidunt debitis ducimus, tempora suscipit fugiat excepturi distinctio aperiam, neque dolorum aliquam molestiae, necessitatibus est! Voluptatibus officia ad iusto voluptas quam cupiditate at blanditiis facilis quo nostrum, veritatis eius culpa amet fugit ipsum reprehenderit. Pariatur molestias fugit vero laboriosam aliquid. Placeat, ipsum reprehenderit nisi natus tempora delectus eum. Totam officia ipsa, fugit quae dolorum consequatur ipsum commodi explicabo nulla maxime quasi eaque?</p>
+        <form action=""></form></td>
+        </tr>
+<td colspan="3">
+     <div class="container">
+        <form action="">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="firstname" placeholder="your name..">
+
+            <label for="lname" >last name</label>
+            <input type="text" id="lname" name="lastname" placeholder="your last name.." required>
+
+            <label for="country">country</label>
+            <select id="country" name="country">
+                <option value="australia">australia</option>
+                <option value="canada">canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">subject</label>
+            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="write something.." style="height: 200px;"></textarea>
+
+            <input type="submit" value="submit">
+            <input type="email" placeholder="your email..">
+
+        </form>
+    </div>
+</td>
+    </table>
+
+</body>
+</html>
+
+<!-- th means different column created
+tr meens rolls
+td means table data and its inside tr
+look at css framework and css variable   -->

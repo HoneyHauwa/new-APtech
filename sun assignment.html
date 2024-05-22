@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment about sun</title>
+    <style>
+       .land{
+        width: 1500px;
+        height: 610px;
+        background-image: linear-gradient(360deg,brown 15%, rgb(13, 157, 224) 5%, rgb(241, 209, 23));
+        
+        
+       }
+       .mountine{
+         position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 40px solid transparent;
+            border-right: 40px solid transparent;
+            border-bottom: 80px solid #1ff35f;
+            /* border-radius: 50px; */
+            left: 100px;
+            /* animation-name: pour; */
+            animation-iteration-count: infinite;
+            top: 445px;
+            transform: translateX(200px);
+            /* animation-name: flow; */
+            /* animation-duration: 5s; */
+            /* animation-iteration-count: infinite; */
+       }
+       .one{
+        top: 445px;
+        left: 900px;
+        border-bottom-color: #1ff342;
+
+       }
+       .two{
+        left: 500px;
+        top: 445px;
+       }
+       .sun{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+        background-image: radial-gradient(yellow,orange,red);
+        box-shadow: 0px 0px 28px 4px gold;
+        animation-name: move;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 2s;
+        overflow: hidden;
+       }
+       @keyframes move{
+        0%{
+            transform: translateY(415px);
+        }
+        /* 20%{ */
+            /* transform: translatex(200px); */
+            /* transition-timing-function: ease-in-out; */
+        /* } */
+        /* 40%{ */
+            /* transform: translateX(300px); */
+        /* } */
+
+
+        /* 50%{transform:translateX(600px); */
+            /* transition-timing-function: ease-in-out; */
+        /* } */
+        60%{
+            transform: translateY(200px);
+        }
+        100%{
+            transform: translateX(1200px);
+        }
+       }
+        @keyframes flow{
+            to{
+                transform: translatex(500px);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="land">
+        <div class="sun"></div>
+        <div class="mountine"></div>
+        <div class="mountine one"></div>
+        <div class="mountine two" ></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tea cup</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: rgb(54, 130, 243);
+        }
+        .container{
+            position: relative;
+            top: 50px;
+        }
+        .cup{
+            position: relative;
+            width: 280px;
+            height: 300px;
+            background: linear-gradient(to right, white,rgb(226, 224, 224));
+            border-bottom-left-radius: 45%;
+            border-bottom-right-radius: 45%;
+        }
+        .top{
+            position: absolute;
+            top: -30px;
+            width: 100%;
+            height:60px ;
+            background: linear-gradient(to right,  white,rgb(212, 210, 210));
+            border-radius: 50%;
+        }
+        .circle{
+            position: absolute;
+            top: 5px;
+            left: 10px;
+            width: 30px;
+            background-color: brown;
+            border-radius: 50%;
+            box-sizing: border-box;
+            overflow: hidden;
+
+
+        }
+        .coffea{
+            position:relative;
+            top:20px;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color:brown;
+            border-radius:50%;
+
+        }
+        .handle{
+            position: absolute;
+            right: -76px;
+            top: 304x;
+            width: 160px;
+            height: 180px;
+            border: 25px solid rgb(226, 42, 134);
+            border-left: 25px solid transparent;
+            border-bottom: 25px solid transparent;
+            border-radius: 50%;
+            transform: rotate(42deg);
+        }
+        .plate{
+            position: absolute;
+            bottom: -50px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 500px;
+            height: 200px;
+            background-color: aliceblue;
+            border-radius: 50%;
+            box-shadow: 0 35px 35px rgb(12, 5, 5);
+        }
+        .plate::before{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            border-radius: 50%;
+            background: linear-gradient(to left rgb(235, 227, 227) rgb(156, 153, 153));
+
+
+        }
+         .plate::after{
+            content: "";
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            right: 30px;
+            bottom: 30px;
+            background: radial-gradient(rgb(7, 7, 7) ) 25%, transparent,transparent;
+            border-radius: 50%;
+
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="plate"></div>
+        <div class="cup">
+            <div class="top">
+                <div class="vapour">
+
+                </div>
+                 <div class="circle">
+                    <div class="coffea"></div>
+                 </div>
+
+            </div>
+            <div class="handle"></div>
+        
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>button experiment</title>
+    <style>
+    button.join-now {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+
+    position: relative;
+    background-color: #e71fab;
+    isolation: isolate; /* If ommitted, child pseudo element will be stacked behind */
+}
+
+button.join-now::before {
+    content: "";
+    position: absolute;
+    background-color: #0d31f8;
+    top: 0;
+    left: 100%;
+    right: 0;
+    bottom: 0;
+    transition: left 500ms ease-out;
+
+    z-index: -1;
+}
+button.join-now:hover::before {
+    left: 0;
+}
+    </style>
+</head>
+<body>
+    <div class="button-join-now"></div>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>raindrops</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        .sky{
+            background-color: rgb(48, 112, 185);
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        .raindrop{
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-bottom: 20px solid #f7f2f2;
+            border-radius: 50px;
+            left: 460px;
+            animation-name: pour;
+            animation-iteration-count: infinite;
+            top: 120px;
+            /* box-shadow: 3px 3px 4px white; */
+        }
+        .drop2{
+        border-bottom-color: rgb(227, 238, 236);
+        transform: scale(1);
+            top: 120px;
+            left: 400px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            
+            
+            
+
+        }
+        .drop3{
+            border-bottom-color: rgb(217, 223, 223);
+            transform: scale(1);
+            top:120px ;
+            left: 890px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            
+            
+            
+
+        }
+        .drop4{
+            border-bottom-color: rgb(227, 234, 235);
+            transform:scale(1) ;
+            top: 120px;
+            left: 800px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in;
+            
+        }
+        .drop5{
+             border-bottom-color: rgb(228, 245, 196);
+            transform:scale(1) ;
+            top: 120px;
+            left: 600px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+        .drop6{
+            border-bottom-color: rgb(245, 241, 241);
+            transform:scale(1) ;
+            top: 120px;
+            left: 780px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .drop7{
+             border-bottom-color: rgb(198, 241, 247);
+            transform:scale(1) ;
+            top: 120px;
+            left: 470px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+        }
+        .drop8{
+             border-bottom-color: rgb(186, 243, 205);
+            transform:scale(1) ;
+            top: 120px;
+            left: 780px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .drop9{
+             border-bottom-color: rgb(218, 191, 243);
+            transform:scale(1) ;
+            top: 120px;
+            left: 690px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: infinite;
+        }
+        .drop10{
+             border-bottom-color: rgb(222, 240, 228);
+            transform:scale(1) ;
+            top: 120px;
+            left: 730px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-timing-function: ease-out;
+            animation-iteration-count: infinite;
+        }
+        .drop11{
+             border-bottom-color: rgb(199, 244, 255);
+            transform:scale(1) ;
+            top: 120px;
+            left: 550px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-timing-function: ease-in;
+            animation-iteration-count: infinite;
+        }
+        .drop12{
+             border-bottom-color: rgb(208, 241, 144);
+            transform:scale(1) ;
+            top: 120px;
+            left: 520px;
+            animation-name: pour;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-out;
+        }
+
+
+        /* z-index is used for stacking */
+
+        .cloud{
+            width: 300px;
+            height: 100px;
+            background-color: rgb(228, 237, 240);
+            /* box-shadow: 4px 4px 8px rgb(252, 248, 248); */
+            border-radius: 50%;
+            top: 50%;
+            left: 30%;
+            z-index: 99;
+        }
+        .cld2{
+            position: absolute;
+            top: 45%;
+            left: 35%;
+        }
+        .cld3{
+            position: absolute;
+            top: 45%;
+            left: 25%;
+
+        }
+        .cld4{
+            position: absolute;
+            top: 50%;
+            left: 45%;
+        }
+        .cld1{
+             position: absolute;
+            top: 50%;
+            left: 25%;
+        }
+        .clouds{
+            top: 7%;
+            position: relative;
+        }
+        @keyframes pour{
+            to{
+                transform: translateY(500px);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="sky">
+
+        <div class="clouds" style="z-index: 98;">
+            <div class="cloud cld2"></div>
+            <div class="cloud cld3"></div>
+            <div class="cloud cld4"></div>
+            <div class="cloud cld1"></div>
+        </div>
+        <div class="raindrop "></div>
+        <div class="raindrop drop2"></div>
+        <div class="raindrop drop3"></div>
+        <div class="raindrop drop4"></div>
+        <div class="raindrop drop5"></div>
+        <div class="raindrop drop6"></div>
+        <div class="raindrop drop7"></div>
+        <div class="raindrop drop8"></div>
+        <div class="raindrop drop9"></div>
+        <div class="raindrop drop10"></div>
+        <div class="raindrop drop11"></div>
+        <div class="raindrop drop12"></div>
+    
+    </div>
+</body>
+</html>

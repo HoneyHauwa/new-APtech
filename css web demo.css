@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(166, 189, 252);
+}
+.row{
+    display: grid;
+    grid-template-columns: 400px 400px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+.row-text{
+    font-size: 18px;
+    line-height: 1.4;
+    text-align: justify;
+}
+.row-text > button{
+background-color: royalblue;
+outline: none;
+border: none;
+font-size: 20px;
+padding: 8px;
+border-radius: 8px;
+color: white;
+}
+#me{
+    margin-left: 100px;
+}

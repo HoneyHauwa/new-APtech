@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact form</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;}
+            *{ box-sizing: border-box; }
+            input[type=text],select,textarea{
+                width: 100%;
+                padding: 12px;
+                border: 1px solid rgb(252, 107, 232);
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+            input[type=submit]{
+                background-color: rgb(247, 14, 169);
+                color: aliceblue;
+                padding: 12px 20px;
+                border-radius: 4px;
+                cursor: grab;
+            }
+            input[type=submit]:hover{
+                background-color: rgb(87, 1, 51);
+
+            }
+            .container{
+                border-radius: 5px;
+                background-color: white;
+                padding: 20px;
+            }
+        
+    </style>
+</head>
+<body>
+    <h3>contact form</h3>
+    <div class="container">
+        <form action="">
+            <label for="fname">first name</label>
+            <input type="text" id="fname" name="firstname" placeholder="your name..">
+
+            <label for="lname" >last name</label>
+            <input type="text" id="lname" name="lastname" placeholder="your last name.." required>
+
+            <label for="country">country</label>
+            <select id="country" name="country">
+                <option value="australia">australia</option>
+                <option value="canada">canada</option>
+                <option value="usa">USA</option>
+            </select>
+
+            <label for="subject">subject</label>
+            <textarea name="subject" id="subject" cols="30" rows="10" placeholder="write something.." style="height: 200px;"></textarea>
+
+            <input type="submit" value="submit">
+            <input type="email" placeholder="your email..">
+
+        </form>
+    </div>
+</body>
+</html>

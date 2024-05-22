@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hover sidebar Navigation</title>
+    <style>
+        #sidenav a{
+            position: absolute;
+            left:-90px;
+            transition: 0.3s;
+    padding: 16px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 21px;
+    color:rgb(7, 5, 3);  
+    border-radius: 0 6px 6px;
+    }
+    #sidenav a:hover{
+        left: 0;
+    }
+    #home{
+        background-color: blue;
+        top: 40px;
+    }
+    #profile{
+        background-color: rgb(42, 165, 69);
+        top: 100px;
+    }
+    #product{
+        background-color: rgb(216, 17, 156);
+        top: 160px;
+
+    }
+    #catelogue{
+        background-color: rgb(206, 7, 7);
+        top: 220px;
+    }
+    </style>
+</head>
+<body>
+    <div id="sidenav">
+        <a href="#"id="home"> Home</a>
+        <a href="#"id="profile"> Profile</a>
+        <a href="#"id="product">Product</a>
+        <a href="#"id="catelogue">Caterlogue</a>
+    </div>
+    <!-- the second div that has an inline styling  -->
+    <div style="margin-left: 90px;">
+    <h2> Blassing Shop</h2>
+    </div>
+    
+</body>
+</html>

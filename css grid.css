@@ -1,0 +1,18 @@
+.grid-contain{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px;
+    background-color: darkblue;
+    padding: 10px;
+    gap: 8px;
+    justify-content: space-evenly;
+    align-content: center;
+    /* align-items: center; */
+}
+.grid-contain > div{
+    color: aliceblue;
+    text-align: center;
+    background-color: rgb(4, 77, 52);
+    padding: 12px;
+    font-weight: bolder;
+}

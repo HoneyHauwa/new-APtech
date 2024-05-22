@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shadow</title>
+    <style>
+        h1{
+            color: goldenrod;
+            text-shadow: 2px 3px 4px rgb(233, 19, 19); 
+            animation-name: hauwa;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+            
+
+        }
+        body{
+            overflow: hidden;
+        }
+        @keyframes hauwa{
+            0%{
+                transform: translateX(0);
+                transform: rotatey(90deg);
+                
+            }
+            10%{
+                transform: translateX(20px);
+                transform: rotatey(30deg);
+                
+            }
+            30%{
+                transform: translateX(40px);
+                transform: rotatey(60deg);
+                
+            }
+            60%{
+                transform: translateX(60px);
+                transform: rotatey(90deg);
+                
+            }
+            70%{
+                transform: translateX(80px);
+                transform: rotatey(120deg);
+                
+            }
+            100%{
+                transition: transform 2s;
+                transform: translateX(1200px);
+                transform: rotatey(360deg);
+            }
+        }
+    
+
+        
+    </style>
+</head>
+<body>
+    <h1>hauwa</h1>
+</body>
+</html>

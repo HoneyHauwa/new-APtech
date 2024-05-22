@@ -1,0 +1,10 @@
+  .coffea{
+            position:absolute;
+            top:20px;
+            left:0;
+            width:100px;
+            height:100px;
+            background:linear-gradient( to right rgb(12, 5, 5) rgb(14, 4, 4));
+            border-radius:50%;
+
+        }

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parallax navbar</title>
+</head>
+<style>
+     .navbar{
+        float: left;
+        background-color: black;
+        color: azure;
+        width: 1350px;
+        padding: 12px;
+     }
+     .navbar a{
+        color: aquamarine;
+        padding-left: 50px;
+        
+     }
+     .navbar{
+
+        background-color: rgb(176, 127, 255);
+        color: black;
+        text-decoration: unset;
+        /* padding: 20px; */
+        font-size: larger;
+        
+     }
+          body{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            height: 100%;
+        }
+        .parallax{
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg1{
+            background-image: url("../yoga2.jpeg");
+        }
+        .bg2{
+            background-image: url("../fashion1.jpeg");
+        }
+        .right{
+            padding: 100px;
+            position: relative;
+            color: rgb(15, 16, 19);
+            font-size: x-large;
+        }
+        .left{
+            left: 700px;
+            color: rgb(252, 185, 219);
+            font-size: x-large;
+            position: relative;
+            padding: 100px;
+        }
+       
+       
+        
+</style>
+<body>
+    <div class="navbar">
+        <a href="#">home</a>
+        <a href="#">contact</a>
+        <a href="#">service</a>
+        <a href="#">blog</a>
+    </div> 
+  
+     
+<div class=" parallax bg1">
+    <ul class="right">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+</div>
+<div class="parallax bg2">
+    <ul class="left">
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+    </ul>
+</div>
+
+    
+</body>
+</html>

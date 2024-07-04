@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object methods</title>
+</head>
+<body>
+    <!-- methods are simply functions that are written within an object  -->
+
+    <script>
+        const person = {
+            name:"melvin",
+        lastname:"hauwa",
+        status:"married",
+        occupation:"agent",
+        fullname:function(){
+            return this.name + " " + this.lastname.toUpperCase();
+        }
+
+        }
+       document.getElementById("show").innerHTML=person.fullname();
+
+
+
+
+    
+
+    </script>
+
+    <!-- function parameters are variables that act as placeholders for the values that would be passed tyo the function when called , they allow functions to accept input values and perform operations based on those values -->
+</body>
+</html>

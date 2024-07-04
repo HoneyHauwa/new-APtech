@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if else statements</title>
+</head>
+<body>
+    <h2>if else statements in js</h2>
+    <script>
+        let password = "admin123" ;
+        if(password== "admin123"){
+            alert("you are allowed to enter");
+        
+            let staffrole = prompt("what is your role");
+            if(staffrole == "director"){
+                alert("you have access");
+            }
+            else{
+                alert("you are denied access");
+                let otherrole = prompt("what is your role");
+                if(otherrole == "manager"){
+                    alert("you have access")
+                }
+                else{
+                    alert("you are denied access")
+                }
+            }
+        }
+        else{
+            alert("you are not allowed to enter");
+        }
+
+        let order = prompt("what will you like to do today")
+    </script>
+</body>
+</html>

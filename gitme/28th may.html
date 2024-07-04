@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css parallex</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        body, html{
+            height: 100%;
+        }
+        .parallax{
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .bg1{
+            background-image: url("../yoga2.jpeg");
+        }
+        .bg2{
+            background-image: url("../fashion1.jpeg");
+        }
+        title{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: center;
+            color: white;
+        }
+        .text{
+            font-size: 50px;
+            background-color: blue;
+            padding: 18px;
+            letter-spacing: 8px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax bg1">
+        <div class="text">
+            <span>NATURE</span>
+        </div>
+    </div>
+    <div style="height: 300px; background-color: green; color: white;padding: 12px;">
+    scroll up and down to see effect <br>
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reiciendis ipsum ipsa dolorem modi possimus quia magni esse molestiae, nihil pariatur.</div>
+<div class="parallax bg2"></div>
+</body>
+</html>

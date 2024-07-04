@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the place</title>
+</head>
+<body>
+    <script>
+        // case 2:
+        if(orderquant >= 3 && orderquant <= 5) {
+            let customerDiscount = beans * 0.1 ;
+        }
+       else if (orderquant > 10){
+        let customerdiscount = rice * 0.2;
+        alert(`total is ngn ${rice * orderquant - customerdiscount} with 20% discount`);
+       }
+
+       else if (orderquant > 5 && orderquant <= 10){
+        let customerdiscount = beans * 0.15;
+        alert(`total is ngn${beans * orderquant - customerdiscount} with 10% discount`);
+       }
+
+       else {
+        alert(`no dis count offered, total is ${rice * orderquant}`)
+       }
+       
+        //  case 3:
+        if(orderquant >= 3 && orderquant <= 5) {
+            let customerDiscount = beans * 0.1 ;
+        }
+       else if (orderquant > 10){
+        let customerdiscount = rice * 0.2;
+        alert(`total is ngn ${rice * orderquant - customerdiscount} with 20% discount`);
+       }
+
+       else if (orderquant > 5 && orderquant <= 10){
+        let customerdiscount = beans * 0.15;
+        alert(`total is ngn${shawarma * orderquant - customerdiscount} with 10% discount`);
+       }
+
+       else {
+        alert(`no dis count offered, total is ${shawarma * orderquant}`)
+       }
+
+    //    default:
+            alert("food not available yet")
+       
+         
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Drawing</title>
+</head>
+<body>
+    <h1>Canvas Element Interaction</h1>
+
+    <canvas id="myCanvas" width="300" height="180" style="border: 1px solid red;"></canvas>
+    <input type="color" id="pickcolor" value="#000000"> <!-- Added color picker input -->
+
+    <script>
+        let color = document.getElementById("pickcolor");
+        let canvas = document.getElementById("myCanvas");
+        let canvasDraw = canvas.getContext("2d");
+
+        canvasDraw.font = "35px Times New Roman";
+        canvasDraw.fillStyle = "purple"; // Set fill style directly to color
+        canvasDraw.fillText("Picaso Canvas", 10, 50); // Corrected fillText usage
+
+        canvasDraw.beginPath(); // Corrected beginPath
+        canvasDraw.moveTo(0, 90);
+        canvasDraw.lineTo(300, 90);
+        canvasDraw.strokeStyle = "red";
+        canvasDraw.stroke();
+    </script>
+</body>
+</html>

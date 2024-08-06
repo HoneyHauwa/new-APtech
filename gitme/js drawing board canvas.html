@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drawing  board</title>
+</head>
+<body>
+    <h1 style="text-align: center;">My Drawing Board</h1>
+    <canvas id="board" width="400" height="300" style="border:1px solid black"></canvas>
+    <br>
+    <button id="clearDrawing">Clear</button>
+
+    <div>
+        stroke width: <input type="range" id="strokeWidth" max="20" value="5">
+        line color: <input type="color" id="lineColor" value="#000000">
+    </div>
+
+    <script>
+        const canvas = document.getElementById("board");
+        const ctx = canvas.getContext("2d");
+        const strokeWidthInput = document.getElementById("strokeWidth");
+        const lineColorInput = document.getElementById("lineColor");
+
+        ctx.lineWidth = strokeWidthInput.value;
+        ctx.strokeStyle = lineColorInput.value;
+
+        let isDrawing = false;
+        let lastX = 0;
+        let lastY = 0;
+
+        document.addEventListener("mousedown", (e) => {
+            isDrawing = true;
+            lastX = e.offsetX;
+            lastY = e.offsetY;
+        });
+
+        canvas.addEventListener("mousemove", (e) => {
+            if (isDrawing) {
+                ctx.beginPath();
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(e.offsetX, e.offsetY);
+                ctx.stroke();
+                lastX = e.offsetX;
+                lastY = e.offsetY;
+            }
+        });
+
+        document.addEventListener("mouseup", () => {
+            isDrawing = false;
+        });
+
+        document.getElementById("clearDrawing").addEventListener("click", () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        });
+
+        strokeWidthInput.addEventListener("input", () => {
+            ctx.lineWidth = strokeWidthInput.value;
+        });
+
+        lineColorInput.addEventListener("input", () => {
+            ctx.strokeStyle = lineColorInput.value;
+        });
+    </script>
+</body>
+</html>
+
+

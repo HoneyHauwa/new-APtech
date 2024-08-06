@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reguler Expression</title>
+</head>
+<body>
+    <h2>reguler Expression</h2>
+    <p id="show">
+
+    </p>
+    <script>
+        let show = document.getElementById("show");
+
+        let txt = "learning reguler expression at aptech";
+        let phn = '944093285';
+
+        let regexp = /[a-z]/g;
+        let regnum = /[1-6]/g
+
+        show.textcontent = txt.match(regexp);
+    </script>
+</body>
+</html>

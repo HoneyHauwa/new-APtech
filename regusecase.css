@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.container{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="email"],input[type="password"]{
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #777777;
+    color: black;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+#message{
+    color: red;
+    padding: 10px;
+}

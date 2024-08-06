@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of BOM Objects</title>
+</head>
+<body>
+    <h2>Use of BOM Objects</h2>
+    <p id="show"></p>
+    <button id="open">Open Window</button>
+    <button id="close">Close Window</button>
+    <script>
+        let p = document.getElementById("show");
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        p.innerHTML = `Your screen size is ${w}px wide and ${h}px high`;
+
+        let windowX;
+        let btn = document.getElementById("open");
+        let btnc = document.getElementById("close");
+
+        btn.addEventListener("click", openWindow);
+        btnc.addEventListener("click", closeWindow);
+
+        function openWindow() {
+            windowX = window.open("", "myBlankWindow", "width=300,height=300");
+            if (windowX) {
+                windowX.document.write("<h2>This is my new window</h2>");
+            } else {
+                alert("Failed to open the window. Please allow pop-ups for this site.");
+            }
+        }
+
+        function closeWindow() {
+            if (windowX && !windowX.closed) {
+                windowX.close();
+            } else {
+                alert("No window open or window already closed.");
+            }
+        }
+    </script>
+</body>
+</html>

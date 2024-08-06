@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>canvas drawing</title>
+</head>
+<body>
+    <h1>canvas element interaction</h1>
+
+    <canvas id="myCanvas" width="300" height="180px" style="border:1px red solid;"></canvas>
+
+    <script>
+
+        let color = document.getElementById("pickcolor");
+
+
+        let canvas = document.getElementById("myCanvas");
+        let canvasDraw = canvas.getContext("2d");
+
+
+        
+        canvasDraw.font = "35px Times New Roman";
+        canvasDraw.fillStyle = color.value;
+        canvas.fillText = "purple"
+        canvasDraw.fillText("picaso Canvas", 10 , 50);
+
+
+        canvasDraw.beginpath();
+        canvasDraw.moveTo(0,90);
+        canvasDraw.lineTo(300, 90);
+        canvasDraw.strokeStyle = "red";
+        canvasDraw.stroke();
+
+    </script>
+</body>
+</html>
